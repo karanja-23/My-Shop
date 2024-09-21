@@ -37,3 +37,11 @@ function update (){
  closeIcon.addEventListener('click', function(){
     displayMenu.style.display = 'none';
  })
+
+ const menuItems = document.querySelectorAll('.mobile_menu a');
+
+menuItems.forEach(function(menuItem){
+    menuItem.addEventListener('click', function(){
+        displayMenu.style.display = 'none';
+    })
+})
