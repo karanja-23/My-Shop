@@ -466,5 +466,18 @@ hr{
     .mobile_menu{
         font-size: small;
     }
+    .mysearch input{
+        font-size: x-small;
+        line-height: 0.5;
+    }
+    #mobilelogo h6{
+        font-size: small;
+    }
+    .mysearch {
+        height: 25px;
+        border-radius: 25px;
+        
+    }
+    
 }
 
