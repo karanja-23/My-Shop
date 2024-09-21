@@ -6,6 +6,7 @@ div{
     justify-items: baseline;
     display: flex;
     padding: 10px;
+    padding-top: 13px;
     color: #d5e6f5;
     justify-content: space-between;
     background-color: rgb(23, 23, 63);
@@ -162,7 +163,7 @@ div{
 #bars{
     font-size: xx-large;
     margin: 12px;
-    margin-top: 20px;
+    margin-top: 11px;
     display: none;
     
 }
@@ -212,6 +213,108 @@ ul li{
     position: relative;
     width: 70%;
     float: right;
+}
+.mysearch{
+    background-color: #d5e6f5;
+    border-radius: 15px;
+    margin: 4px;
+    height: 25px;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid grey;
+    padding: 8px;
+    padding-bottom: 12px;
+    padding-top: -4px;
+    margin-bottom: 12px;
+    display: none;
+}
+
+
+#mysearch::placeholder{
+    font-size: medium;
+}
+.mysearch input{
+    border: none;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+   outline: none;
+}
+.mysearch input:focus{
+    border: none;
+}
+#mysearch{
+    color: rgb(23, 23, 63);
+}
+
+.mobile_menu{
+    height: 100vh;
+    width: 60vw;
+    background-color: rgb(23, 23, 63);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #d5e6f5;
+    display: none;
+}
+#mobilelogo{        
+    align-items: center;
+    margin-top:27px;  
+    display: flex;   
+    padding-bottom: 15px;    
+    margin-left: -3px;
+    text-align: center;
+    justify-content: center;   
+    
+}
+#mobilelogo h6{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin-left: -5px;
+    color: #d5e6f5;
+    text-align: center;
+    
+    
+}
+hr{
+    margin-top: -25px;
+    margin-bottom: 32px;
+}
+
+#mobilelogo img{
+    width: 50px;    
+    margin-right: -3px; 
+    margin-top: -27px; 
+    color: aliceblue;  
+    font-weight: 900;
+}
+.mynav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.mynav a{
+    margin-bottom: 32px;
+    padding: 15px;
+}
+.mynav a:hover, .mynav a:active{
+    background-color: #d5e6f5;
+    color:  rgb(23, 23, 63);
+}
+#close{
+    
+    position: absolute;
+    display: block;
+    font-size: x-large;
+    top: 4px;
+    right: 1px;
+    
+}
+.mobile_menu i{
+    border: 3px white;
+    margin: 10px;
+    border-radius: 4px;
 }
 @media only screen and (max-width: 1433px) {
     html{
@@ -307,6 +410,13 @@ ul li{
     .about ul {
        margin-left: -72px;
      }
+     .search{
+        width: 40vw;
+        height:20px;
+     }
+     #bars{
+        font-size: x-large;
+     }
 }
 @media only screen and (max-width: 910px) {
     #bars{
@@ -324,78 +434,29 @@ ul li{
         display: none;
     }
 }
-@media only screen and (max-width: 337px) {
+@media only screen and (max-width: 436px) {
     #logo h6{
-        font-size: smaller;
+        font-size: small;
+    }
+    .search{
+        width: 25vw;
+        height:5px;
+        display: none;
+     }
+     .mysearch{
+        display: block;
+     }
+
+}
+@media only screen and (max-width: 520px) {
+    .search{
+        width: 40vw;
+        height: 12px;
+        align-items: center;
+        
+     }
+     #logo h6{
+        font-size: small;
     }
 }
 
-.mobile_menu{
-    height: 100vh;
-    width: 60vw;
-    background-color: rgb(23, 23, 63);
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #d5e6f5;
-    display: none;
-}
-#mobilelogo{        
-    align-items: center;
-    margin-top:27px;  
-    display: flex;   
-    padding-bottom: 15px;    
-    margin-left: -3px;
-    text-align: center;
-    justify-content: center;   
-    
-}
-#mobilelogo h6{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    margin-left: -5px;
-    color: #d5e6f5;
-    text-align: center;
-    
-    
-}
-hr{
-    margin-top: -25px;
-    margin-bottom: 32px;
-}
-
-#mobilelogo img{
-    width: 50px;    
-    margin-right: -3px; 
-    margin-top: -27px; 
-    color: aliceblue;  
-    font-weight: 900;
-}
-.mynav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-.mynav a{
-    margin-bottom: 32px;
-    padding: 15px;
-}
-.mynav a:hover, .mynav a:active{
-    background-color: #d5e6f5;
-    color:  rgb(23, 23, 63);
-}
-#close{
-    
-    position: absolute;
-    display: block;
-    font-size: x-large;
-    top: 4px;
-    right: 1px;
-    
-}
-.mobile_menu i{
-    border: 3px white;
-    margin: 10px;
-    border-radius: 4px;
-}
