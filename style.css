@@ -385,7 +385,7 @@ hr{
     color: rgb(23, 23, 63);
 }
 .my-infor p{
-    font-size: medium;
+    font-size: small;
     font-weight: 600;
     color: rgb(34, 34, 80);
     text-align: left;
@@ -419,9 +419,7 @@ hr{
     
 }
 @media only screen and (max-width: 1433px) {
-    html{
-        font-size: 1em;
-    }
+    
     .card{
         width: 40%;
     }
