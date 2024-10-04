@@ -273,7 +273,49 @@ hr{
     margin-bottom: 32px;
     
 }
-
+.content h4{
+    background-color: antiquewhite;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 12px 5px 12px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 12px;
+}
+.content p{
+    background-color: rgb(167, 159, 149);
+    width: fit-content;
+    text-align: center;
+    padding: 5px 12px 5px 12px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 12px;
+}
+.card img{
+    border-radius: 5px;
+    padding: 5px;
+}
+.card{
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(226, 218, 218);
+    color: rgb(23, 23, 63);
+    padding: 12px;
+    border-radius: 7px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+}
+.card img{
+    width: 100%;
+    
+}
+#myProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-gap: 20px;
+}
 #mobilelogo img{
     width: 50px;    
     margin-right: -3px; 
@@ -379,6 +421,9 @@ hr{
     html{
         font-size: 1em;
     }
+    .card{
+        width: 30%;
+    }
     .about{
         margin-left: 42px;
     }
@@ -423,11 +468,11 @@ hr{
         padding: -5px;
         box-shadow: 0px 5px 10px 5px rgb(23, 23, 63);
         border-radius: 10px; 
-        width: 70vw;  displayMenu.style.display = 'none';
+        width: 70vw;          
         display: block;
         margin: 12px 0px 12px 0px;
         text-align: center;
-        margin-right: px;
+        margin-right: 0px;
     
      }
      .about img{
@@ -469,6 +514,7 @@ hr{
     .about ul {
        margin-left: -72px;
      }
+     
      .search{
         width: 40vw;
         height:20px;
@@ -531,6 +577,13 @@ hr{
         height: 12px;
         align-items: center;
         
+     }
+     #myProducts{
+        flex-direction: column;
+     }
+     .card{
+        width: 70%;
+        text-align: center;
      }
      #logo h6{
         font-size: small;

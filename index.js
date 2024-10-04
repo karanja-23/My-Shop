@@ -10,6 +10,30 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const slider = document.querySelector('#slider img')
 
+function renderOneProduct(product){
+    if (!product || !product.image || !product.name || !product.price) {
+        console.error('Invalid product data:', product);
+        return;
+    }
+
+    let card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML =`
+    <img src = "${product.image}" />
+    <div class = "content">
+        <h4>${product.name}</h4>
+        <p>Ksh.${product.price}</p>
+    </div>
+    `
+    document.querySelector('#myProducts').appendChild(card);
+}
+
+function initialize(){
+    products.forEach( function(product){
+        renderOneProduct(product)
+    })
+}
+initialize();
 function updateSlider(){
     slider.src = images[currentIndex];
 }
