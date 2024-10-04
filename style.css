@@ -274,7 +274,7 @@ hr{
     
 }
 .content h4{
-    background-color: antiquewhite;
+    background-color: rgb(167, 159, 149);
     width: fit-content;
     text-align: center;
     padding: 5px 12px 5px 12px;
@@ -298,7 +298,7 @@ hr{
 .card{
     width: 20%;
     padding: 10px;
-    background-color: rgb(20, 20, 82);
+    background-color: rgb(230, 227, 227);
     color: rgb(6, 6, 29);
     padding: 12px;
     border-radius: 7px;
