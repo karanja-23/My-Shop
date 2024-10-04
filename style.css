@@ -298,13 +298,14 @@ hr{
 .card{
     width: 20%;
     padding: 10px;
-    background-color: rgb(226, 218, 218);
-    color: rgb(23, 23, 63);
+    background-color: rgb(20, 20, 82);
+    color: rgb(6, 6, 29);
     padding: 12px;
     border-radius: 7px;
     justify-content: center;
     text-align: center;
     font-weight: 900;
+    margin-top: 5px;
 }
 .card img{
     width: 100%;
@@ -422,7 +423,7 @@ hr{
         font-size: 1em;
     }
     .card{
-        width: 30%;
+        width: 40%;
     }
     .about{
         margin-left: 42px;
